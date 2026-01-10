@@ -1,0 +1,11 @@
+trial_id,seed,cause,episode,mean_100_eval_at_stop,plot_path
+default,33,goal,109,30.242257,results\continuous_control\run_20251229_225041\plots\evaluation_mean100_default_seed_33.png
+default,41,goal,100,31.246443,results\continuous_control\run_20251229_225041\plots\evaluation_mean100_default_seed_41.png
+default,66,goal,100,32.639033,results\continuous_control\run_20251229_225041\plots\evaluation_mean100_default_seed_66.png
+default,39,goal,100,31.442538,results\continuous_control\run_20251229_225041\plots\evaluation_mean100_default_seed_39.png
+default,8,goal,100,30.940383,results\continuous_control\run_20251229_225041\plots\evaluation_mean100_default_seed_8.png
+default,77,goal,100,31.077873,results\continuous_control\run_20251229_225041\plots\evaluation_mean100_default_seed_77.png
+default,21,goal,105,30.034477,results\continuous_control\run_20251229_225041\plots\evaluation_mean100_default_seed_21.png
+default,20,goal,100,31.002543,results\continuous_control\run_20251229_225041\plots\evaluation_mean100_default_seed_20.png
+default,44,goal,104,30.223328,results\continuous_control\run_20251229_225041\plots\evaluation_mean100_default_seed_44.png
+default,22,goal,102,30.176833,results\continuous_control\run_20251229_225041\plots\evaluation_mean100_default_seed_22.png

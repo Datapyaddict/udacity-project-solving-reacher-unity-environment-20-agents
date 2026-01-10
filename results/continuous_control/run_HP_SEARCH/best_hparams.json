@@ -1,0 +1,25 @@
+{
+  "avg_score": 37.7127239329915,
+  "hyperparameters": {
+    "batch_size": 500,
+    "buffer_size": 100000,
+    "exploration_noise_ratio": 0.05,
+    "hidden_dims": [
+      256,
+      256
+    ],
+    "lr": 0.0005,
+    "n_warmup_batches": 5,
+    "optimizer": "Adam",
+    "target_update_every": 5,
+    "tau": 0.01
+  },
+  "scores_per_seed": [
+    37.7127239329915
+  ],
+  "seeds": [
+    29
+  ],
+  "std_score": 0.0,
+  "trial_id": "trial_001"
+}

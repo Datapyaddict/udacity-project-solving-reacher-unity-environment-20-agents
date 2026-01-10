@@ -1,0 +1,11 @@
+trial_id,seed,cause,episode,mean_100_eval_at_stop,plot_path
+trial_001,29,goal,100,32.028608,results\continuous_control\run_20251228_184535\plots\evaluation_mean100_trial_001_seed_29.png
+trial_002,29,goal,112,30.088727,results\continuous_control\run_20251228_184535\plots\evaluation_mean100_trial_002_seed_29.png
+trial_003,29,goal,100,31.132008,results\continuous_control\run_20251228_184535\plots\evaluation_mean100_trial_003_seed_29.png
+trial_004,29,time,183,,results\continuous_control\run_20251228_184535\plots\evaluation_mean100_trial_004_seed_29.png
+trial_005,29,goal,121,30.145147,results\continuous_control\run_20251228_184535\plots\evaluation_mean100_trial_005_seed_29.png
+trial_006,29,goal,138,30.092197,results\continuous_control\run_20251228_184535\plots\evaluation_mean100_trial_006_seed_29.png
+trial_007,29,goal,157,30.096132,results\continuous_control\run_20251228_184535\plots\evaluation_mean100_trial_007_seed_29.png
+trial_008,29,goal,128,30.201047,results\continuous_control\run_20251228_184535\plots\evaluation_mean100_trial_008_seed_29.png
+trial_009,29,goal,109,30.245478,results\continuous_control\run_20251228_184535\plots\evaluation_mean100_trial_009_seed_29.png
+trial_010,29,goal,114,30.341368,results\continuous_control\run_20251228_184535\plots\evaluation_mean100_trial_010_seed_29.png
