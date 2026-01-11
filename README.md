@@ -97,23 +97,22 @@ Do **not** use the "Reacher" version provided by Unity on the [Unity ML-Agents G
 <a id = 'solution'></a>
 # 3. Solution implemented
 
-The solution uses a **MADDPG (Multi Agent Deep Deterministic Policy Gradient)** agent, which relies on:
+The solution uses a **DDPG (Multi Agent Deep Deterministic Policy Gradient)** agent, which relies on:
 
-- an online **shared Actor** (policy) network and an online **Central Critic** (producing 2 Q-values) network.
-- a shaped team reward based on the environment rewards.
-- plus **target** networks (actor and central critic).
+- an online **shared Actor** (policy) network and an online **Critic** network.
+- plus **target** networks (actor and critic).
 
-See [report.pdf](https://github.com/Datapyaddict/udacity-project-solving-multi-agent-tennis-unity-environment/blob/main/report.pdf) for the methodology and results.
+See [report.pdf](https://github.com/Datapyaddict/udacity-project-solving-reacher-unity-environment-20-agents/blob/main/report.pdf) for the methodology and results.
 
 Two scripts are used:
 
-- `shared_actor_maddpg_with_team_reward.py`
+- `shared_ddpg.py`
 - `extract_weights_n_load_into_policy.py`
 
-<a id = 'shared_actor_maddpg_with_team_reward'></a>
+<a id = 'shared_ddpg'></a>
 # 4. Script: `shared_ddpg.py`
 
-<a id = 'shared_actor_maddpg_with_team_reward_overview'></a>
+<a id = 'shared_ddpg_overview'></a>
 ## 4.1 Overview
 
 This script is an end-to-end training runner for a DDPG agent on the Unity Reacher environment, handling a batch of 20 agents.
@@ -132,7 +131,7 @@ In the repository, 2 runs are referenced:
 - Hyperparameter search: `run_HP_SEARCH`
 - Training across seeds: `run_TRAINING_PER_SEED`
 
-The following features are elaborated in [report.pdf](https://github.com/Datapyaddict/udacity-project-solving-multi-agent-tennis-unity-environment/blob/main/report.pdf):
+The following features are elaborated in [report.pdf](https://github.com/Datapyaddict/udacity-project-solving-reacher-unity-environment-20-agents/blob/main/report.pdf):
 
 - Shared Actor (`FCDP`) and Critic (`FCQV`) per trial/seed.
 - Gaussian noise exploration for action selection.
@@ -160,7 +159,7 @@ Built-in defaults:
 - `goal_mean_100_reward=30`
 - `final_eval_episodes=100`
 
-<a id = 'shared_actor_maddpg_with_team_reward_arguments'></a>
+<a id = 'shared_ddpg_arguments'></a>
 ## 4.2 CLI arguments
 
 - `--search`: enables hyperparameter search over the search grid. If not provided, the script runs a single default configuration.
@@ -182,7 +181,7 @@ Search grid:
 - `--env-exe <path>`: path to `Reacher.exe`.
 - `--cpu`: forces PyTorch CPU.
 
-<a id = 'shared_actor_maddpg_with_team_reward_logging'></a>
+<a id = 'shared_ddpg_logging'></a>
 ## 4.3 Logging (`run.log`)
 
 Path:
@@ -292,7 +291,7 @@ Best-trial plot (only when `--search` is enabled):
 
 For simplicity, only the first and last episode checkpoints are kept in the repository.
 
-<a id = 'shared_actor_maddpg_with_team_reward_runs'></a>
+<a id = 'shared_ddpg_reward_runs'></a>
 ## 4.8 2-step runs (commands)
 
 Our approach to solving the environment is to run the script with a --search mode and a single seed common across 10 trials in order to identify the best hyper-parameters. 
@@ -352,7 +351,7 @@ python extract_weights_n_load_into_policy.py --run-dir "path/to/results/collab_c
 <a id = 'repo_structure'></a>
 # 6. Repository structure (key items)
 
-- `shared_actor_maddpg_with_team_reward.py`
+- `shared_ddpg.py`
 - `extract_weights_n_load_into_policy.py`
 - `report.pdf`
 - `./20_Agents_Reacher_Windows_x86_64/` (includes `Reacher.exe`)
